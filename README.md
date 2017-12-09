@@ -7,9 +7,9 @@ Simply select all of your tiles, ensuring they are in the proper order, and drag
 
 If you want to change the tile order, you will have to calculate the bitmasking value for each sprite. Imagine the sprite (X) and its eight adjacent tiles (a-h), like so:
 
-a b c
-d X e
-f g h
+a  b  c  
+d  X  e  
+f  g  h  
 
 The bitmasking value is a binary number based on the adjacent sprites. If there is a tile in that location, it is a 1; if there is no tile in that location, it is a 0. Tile h is 2^0 and tile a is 2^8, so the final value will be in the order abcd efgh.
 
